@@ -1,0 +1,79 @@
+/* Self-contained: no fonts, scripts, or assets are fetched from anywhere. A
+   privacy policy that phones out to a CDN is an awkward thing to publish. */
+:root {
+  color-scheme: light dark;
+  --ink: #1c1c1e;
+  --muted: #5f5f66;
+  --bg: #fdfdfb;
+  --panel: #ffffff;
+  --rule: #e3e3e0;
+  --accent: #1c7a4f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #ececf0;
+    --muted: #a0a0aa;
+    --bg: #131315;
+    --panel: #1c1c1f;
+    --rule: #2e2e33;
+    --accent: #5fd39b;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 1.25rem 5rem;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+.wrap { max-width: 44rem; margin: 0 auto; }
+
+header {
+  padding: 3.5rem 0 2rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 2.5rem;
+}
+
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .5rem; letter-spacing: -0.02em; }
+h2 { font-size: 1.2rem; margin: 2.5rem 0 .6rem; letter-spacing: -0.01em; }
+h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+
+p, li { color: var(--ink); }
+.lede, .muted { color: var(--muted); }
+.lede { font-size: 1.1rem; }
+
+a { color: var(--accent); }
+
+nav { margin-top: 1.25rem; font-size: .95rem; }
+nav a { margin-right: 1.25rem; }
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.panel p:first-child { margin-top: 0; }
+.panel p:last-child { margin-bottom: 0; }
+
+table { border-collapse: collapse; width: 100%; margin: 1.25rem 0; font-size: .95rem; }
+th, td { text-align: left; padding: .55rem .6rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; }
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }

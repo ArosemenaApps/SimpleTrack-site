@@ -13,7 +13,7 @@
 <header>
   <h1>Privacy Policy</h1>
   <p class="lede">Simple Track — Calorie Log</p>
-  <p class="muted">Effective 3 September 2026</p>
+  <p class="muted">Effective 26 September 2026</p>
   <nav><a href="index.html">Home</a><a href="support.html">Support</a></nav>
 </header>
 
@@ -22,8 +22,8 @@
   server. Your food diary, weights, recipes, and settings are stored on your iPhone.
   Nothing is collected about you, nothing is sold, and nothing is used for advertising.
   The only information the app ever sends anywhere is a food you ask it to look up:
-  a barcode you scan, or the words you type into Search. You can switch the second one
-  off.</p>
+  a barcode you scan or type, or the words you search for when you press Search. You can
+  switch the second one off.</p>
 </div>
 
 <h2>What is stored, and where</h2>
@@ -35,8 +35,10 @@ uploaded to Arosemena Apps, and there is no service to upload it to.</p>
   <tbody>
     <tr><td>Food you log, with amounts and nutrition</td><td>Daily totals and history</td></tr>
     <tr><td>Foods, recipes, and saved meals you create</td><td>So you can log them again</td></tr>
-    <tr><td>Weights you enter</td><td>Your weight trend and calorie target</td></tr>
-    <tr><td>Height, date of birth, and biological sex, if you enter them</td><td>The starting estimate of what you burn</td></tr>
+    <tr><td>Weights and body-fat readings you enter, or that you ask the app to read from Apple Health</td><td>Your weight trend and calorie target</td></tr>
+    <tr><td>Height, date of birth, and biological sex, if you enter them or let the app read them from Apple Health</td><td>The starting estimate of what you burn, and the calorie floor</td></tr>
+    <tr><td>Daily nutrition totals you ask the app to bring across from Apple Health or from another app's export file</td><td>Keeping days you logged elsewhere</td></tr>
+    <tr><td>Days you mark as fasting, and your answers about incomplete days</td><td>Counting those days correctly</td></tr>
     <tr><td>Your goal and calorie targets</td><td>The number shown on Today</td></tr>
     <tr><td>Barcode results already looked up</td><td>So a repeat scan works offline</td></tr>
   </tbody>
@@ -56,17 +58,22 @@ identifies itself by name and version, as Open Food Facts asks every app to do.<
 <p>Results are saved on your phone so the same product is not looked up twice.</p>
 
 <h3>Searching by name</h3>
-<p>When you type in Search, the app asks Open Food Facts whether it knows a packaged
-product by that name, so a product is findable without scanning it first. That request
-contains the words you typed and nothing else: no name, no account, no device
-identifier, no history of what you have searched before. Results are saved on your phone
-in the same way.</p>
-<p>This can be turned off in <strong>Settings → Search → Search Open Food Facts</strong>.
-With it off, nothing you type ever leaves your iPhone, and Search covers the built-in
+<p>Typing in Search only searches your iPhone: the built-in database, your own foods,
+and products already saved. Nothing is sent while you type. When you press
+<strong>Search</strong> on the keyboard, or tap <strong>Search Open Food Facts for
+&ldquo;&hellip;&rdquo;</strong>, the app also asks Open Food Facts whether it knows a
+packaged product by that name, so a product is findable without scanning it first. That
+request contains the words you searched for (at least three characters) and nothing
+else: no name, no account, no device identifier, no history of what you have searched
+before. Results are saved on your phone in the same way.</p>
+<p>This is on when you first install the app, and can be turned off in
+<strong>Settings → Search → Search Open Food Facts</strong>. With it off, nothing you
+type ever leaves your iPhone, and Search covers the built-in
 database, your own foods, and products you have already scanned. Barcode lookups are
 unaffected.</p>
-<p>If you never scan a barcode and never search with this on, the app never contacts
-anything.</p>
+<p>If you never look up a barcode and never press Search with this on, the app never
+contacts anything. Links you tap yourself, such as the ones to this site, open in your
+browser.</p>
 
 <h3>Nothing else</h3>
 <p>There are no analytics, no advertising, no crash reporting that transmits your
@@ -76,19 +83,26 @@ content, and no remote configuration. The app contains no third-party tracking c
 <p>Apple Health is entirely optional and off until you turn it on. Each part is asked
 for separately, so turning on weight import does not also ask for permission to write
 your nutrition.</p>
+<p>These are the Health data types Simple Track can use, each only after you allow it:</p>
 <ul>
-  <li><strong>Reading your weight and height</strong>, to keep your trend up to date.</li>
+  <li><strong>Reading your weight, body-fat percentage, height, date of birth, and
+      biological sex</strong>, to keep your trend up to date and to estimate what you burn.</li>
   <li><strong>Writing weights you type into Simple Track</strong>, so your other apps see them.
       Weights that came <em>from</em> Health are never written back.</li>
-  <li><strong>Reading nutrition totals</strong>, if you ask the app to bring across days you
-      logged in another app, or to rebuild days after losing your data.</li>
-  <li><strong>Writing what you log</strong>, so other apps can see your calories and macros.</li>
-  <li><strong>Reading movement and steps</strong>, shown only as context. Activity never changes
-      your calorie target.</li>
+  <li><strong>Reading nutrition totals</strong> (calories, macros, and the other nutrients
+      another app has saved), if you ask the app to bring across days you logged in another
+      app, or to rebuild days after losing your data.</li>
+  <li><strong>Writing what you log</strong> — calories, macros, and the other nutrients you
+      log, and optionally water — so other apps can see it.</li>
+  <li><strong>Reading active energy and steps</strong>, shown only as context. Activity never
+      changes your calorie target.</li>
 </ul>
 <p>Health data is used only for these features. It is never used for advertising,
-profiling, or sale, it is never included in a meal you share with someone, and it is
-never sent off your device by Simple Track. You can turn any of it off at any time in
+profiling, or sale, it is never included in a meal you share with someone, and Simple
+Track never sends it anywhere. What the app has brought in from Health — weights,
+body-fat readings, and daily totals — becomes part of your Simple Track history, so it is
+stored like the rest of that history and is included in an export only when you make
+one yourself. You can turn any of it off at any time in
 the Health app, and the rest of Simple Track keeps working.</p>
 
 <h2>Photos and the camera</h2>

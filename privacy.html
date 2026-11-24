@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Simple Track</title>
-<meta name="description" content="How Simple Track handles your data: on your phone, with no account and no analytics.">
+<meta name="description" content="How Simple Track handles your data: on your phone, with no account, no analytics and no advertising.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,22 +13,31 @@
 <header>
   <h1>Privacy Policy</h1>
   <p class="lede">Simple Track — Calorie Log</p>
-  <p class="muted">Effective 13 October 2026</p>
+  <p class="muted">Effective 23 November 2026</p>
   <nav><a href="index.html">Home</a><a href="support.html">Support</a></nav>
 </header>
 
 <div class="panel">
-  <p><strong>The short version.</strong> Simple Track has no account system and no
-  server. Your food diary, weights, recipes, and settings are stored on your iPhone.
-  Nothing is collected about you, nothing is sold, and nothing is used for advertising.
-  The only information the app ever sends anywhere is a food you ask it to look up:
-  a barcode you scan or type, or the words you search for when you press Search. You can
-  switch the second one off.</p>
+  <p><strong>The short version.</strong> Simple Track has no account system. Your food
+  diary, weights, recipes, targets, and settings are stored on your iPhone, not on a
+  server. Nothing is sold, nothing is used for advertising, and there is no analytics or
+  tracking code in the app.</p>
+  <p>Your diary, weights, goals, history, and anything from Apple Health stay on your
+  iPhone and are never uploaded to us. The app connects to the internet only for things
+  you ask it to do: looking up a food in Open Food Facts, sharing a meal as a link or
+  opening one, showing the list in <strong>More Apps</strong>, and buying or restoring
+  Simple Track Plus through Apple. The one service we run ourselves is the meal-link
+  service. It stores each meal you deliberately share, encrypted so that we cannot read
+  it, for up to 30 days, and keeps an installation-specific identifier for each copy of
+  the app that has shared a link. That identifier is not associated with an account, a
+  name, or an email address. Both are explained below.</p>
 </div>
 
-<h2>What is stored, and where</h2>
-<p>Everything below is stored on your iPhone, in the app's own storage area. It is not
-uploaded to Arosemena Apps, and there is no service to upload it to.</p>
+<h2>What is stored on your iPhone</h2>
+<p>Everything below is stored on your iPhone, in the app's own storage area, and is not
+uploaded to Arosemena Apps. The one exception is a meal you choose to share as a link,
+which leaves your iPhone encrypted, as described under
+<a href="#meal-links">Sharing a meal as a link</a>.</p>
 
 <table>
   <thead><tr><th>Information</th><th>Why the app has it</th></tr></thead>
@@ -39,22 +48,38 @@ uploaded to Arosemena Apps, and there is no service to upload it to.</p>
     <tr><td>Height, date of birth, and biological sex, if you enter them or let the app read them from Apple Health</td><td>The starting estimate of what you burn, and the calorie floor</td></tr>
     <tr><td>Daily nutrition totals you ask the app to bring across from Apple Health or from another app's export file</td><td>Keeping days you logged elsewhere</td></tr>
     <tr><td>Days you mark as fasting, and your answers about incomplete days</td><td>Counting those days correctly</td></tr>
-    <tr><td>Your goal and calorie targets</td><td>The number shown on Today</td></tr>
+    <tr><td>Your goal, your calorie and macro targets, and the history of when each target applied</td><td>The numbers shown on Today, and keeping past days as they were</td></tr>
+    <tr><td>Your weekly check-ins and recaps</td><td>The weekly review and its history</td></tr>
+    <tr><td>Supplements you track and the doses you tick off</td><td>Your supplement checklist and reminders</td></tr>
     <tr><td>Barcode results already looked up</td><td>So a repeat scan works offline</td></tr>
+    <tr><td>Meal links you have shared (the meal's name, the full link, and the private code that turns it off)</td><td>So you can copy a link again or turn it off; forgotten a week after the link ends</td></tr>
   </tbody>
 </table>
 
-<p>Every one of those fields is optional. The app works if you enter nothing about
-yourself at all.</p>
+<p>Every field about yourself is optional. The app works if you enter nothing about
+yourself at all. Reminders, such as the Monday check-in reminder, are scheduled on your
+iPhone; nothing is sent to us to deliver them.</p>
 
 <h2>What leaves your iPhone</h2>
+<p>There are five kinds of connection, each started by something you do:</p>
+<ul>
+  <li><strong>Your diary and health records</strong> — food log, weights, body measurements,
+      goals, targets, history, and Apple Health data — <strong>are never uploaded.</strong></li>
+  <li><strong>A meal you deliberately share as a link</strong> is uploaded encrypted to our
+      meal-link service.</li>
+  <li><strong>Food lookups</strong> send a barcode or search words to Open Food Facts.</li>
+  <li><strong>More Apps</strong> downloads a list of apps from this website.</li>
+  <li><strong>Subscriptions</strong> are bought, renewed, and restored through Apple.</li>
+</ul>
 
 <h3>Barcode lookups</h3>
-<p>When you scan or type a barcode, the app asks
+<p>When you scan or type a barcode the app does not already know, it asks
 <a href="https://world.openfoodfacts.org/">Open Food Facts</a> — a free, open food
 database run by a non-profit — what that product is. That request contains the barcode
-and nothing else: no name, no account, no device identifier, no history. The app
-identifies itself by name and version, as Open Food Facts asks every app to do.</p>
+and nothing else: no name, no account, no identifier, no history. The app identifies
+itself by name and version, as Open Food Facts asks every app to do. Open Food Facts
+receives your IP address, as any website does, and handles it under
+<a href="https://world.openfoodfacts.org/privacy">its own privacy policy</a>.</p>
 <p>Results are saved on your phone so the same product is not looked up twice.</p>
 
 <h3>Searching by name</h3>
@@ -62,22 +87,103 @@ identifies itself by name and version, as Open Food Facts asks every app to do.<
 and products already saved. Nothing is sent while you type. When you press
 <strong>Search</strong> on the keyboard, or tap <strong>Search Open Food Facts for
 &ldquo;&hellip;&rdquo;</strong>, the app also asks Open Food Facts whether it knows a
-packaged product by that name, so a product is findable without scanning it first. That
-request contains the words you searched for (at least three characters) and nothing
-else: no name, no account, no device identifier, no history of what you have searched
-before. Results are saved on your phone in the same way.</p>
+packaged product by that name. That request contains the words you searched for (at
+least three characters) and nothing else: no name, no account, no identifier, no history
+of what you have searched before. If you then choose a result whose serving size the
+search did not include, the app asks for that one product by its barcode.</p>
 <p>This is on when you first install the app, and can be turned off in
 <strong>Settings → Search → Search Open Food Facts</strong>. With it off, nothing you
-type ever leaves your iPhone, and Search covers the built-in
-database, your own foods, and products you have already scanned. Barcode lookups are
-unaffected.</p>
-<p>If you never look up a barcode and never press Search with this on, the app never
-contacts anything. Links you tap yourself, such as the ones to this site, open in your
-browser.</p>
+type ever leaves your iPhone. Barcode lookups are unaffected.</p>
+
+<h3 id="meal-links">Sharing a meal as a link</h3>
+<p>You can share a meal or recipe as a link instead of a file. When you tap
+<strong>Share Link</strong> or <strong>Copy Link</strong>:</p>
+<ul>
+  <li>Your iPhone creates a new random key for that one share and encrypts the meal with
+      it (AES-256-GCM). Only the encrypted copy is uploaded, to Simple Track's meal-link
+      service at <code>track.arosemenaapps.com</code>, which runs on
+      <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>.</li>
+  <li>The key is placed in the link after the <code>#</code>. Browsers and apps do not
+      send that part of a link to a server, so <strong>the key is never sent to our
+      service and we cannot read the meal.</strong></li>
+  <li><strong>Anyone who has the complete link can open the meal</strong> — the link is
+      both the address and the key. Share it only with people you want to see the meal.
+      Someone who opens it can save their own copy, which stays theirs after the link
+      ends.</li>
+  <li>A meal link contains that meal only: its name, its foods with amounts and nutrition,
+      its versions, and any preparation times, recipe link and cooking steps you added. It
+      never contains your profile, weight, targets, other logs, Health data, your notes
+      on the meal, or your private corrections to foods.</li>
+</ul>
+<p>Alongside the encrypted copy the service stores only what it needs to run: a random
+link identifier, the size of the upload, when it was made and when it expires, and a
+one-way fingerprint of a private code that only your iPhone holds, which is how it knows
+a request to turn the link off came from you.</p>
+<p><strong>How long links last.</strong> A link works for up to 30 days. After that it
+stops working, and an automatic cleanup that runs every hour deletes the encrypted copy
+and its record; as a backstop, storage rules delete any copy older than 32 days. You can
+turn a link off sooner in <strong>Settings → Shared Links → Turn Off Link</strong>: the
+encrypted copy is deleted at once, and a small record without the meal is kept until the
+original 30 days end, so the link can say it was turned off rather than that it never
+existed.</p>
+<p><strong>Links do not depend on your own data.</strong> Deleting your Simple Track data,
+or deleting the app, does not turn off links you have already shared — someone you sent a
+meal to can still open it until it expires. Turning a link off is the only way to end it
+early. If you delete the app, you also lose its list of shared links, and with it the
+ability to turn those links off yourself; write to
+<a href="mailto:ArosemenaApps@gmail.com">ArosemenaApps@gmail.com</a> with the link and we
+will remove it. A meal someone has already saved from your link belongs to their own
+library and is not affected by anything you do afterwards.</p>
+<p><strong>Installation identifier.</strong> To stop the service being misused, the app
+proves it is a genuine copy of Simple Track using Apple's
+<a href="https://developer.apple.com/documentation/devicecheck/establishing-your-app-s-integrity">App Attest</a>.
+The first time a copy of the app shares a link, it creates a cryptographic key on your
+iPhone and registers it with Apple and with our service. The service stores that key's
+identifier and public part, when it was registered and last used, and a usage counter.
+This is an installation-specific identifier: it is different for each installation of
+the app, and it is not associated with a Simple Track account (there are none), a name,
+or an email address. The service does not record which meals were shared with it. It is
+used only to check that uploads come from the app and to limit how many links one
+installation can make each day; those daily counts are kept for about two days. The
+identifier is deleted after 90 days in which that installation shares nothing. It is
+not used for advertising or tracking.</p>
+<p><strong>Opening a link</strong> downloads the encrypted meal and decrypts it on your
+iPhone. It does not send your diary, any account information (Simple Track has no
+accounts), or any other nutrition records, and opening a link does not register an
+installation identifier.</p>
+<p><strong>Internet addresses.</strong> Sharing or opening a link involves normal network
+information, including your IP address, which Cloudflare processes to deliver the
+connection and apply rate limits. Our service does not intentionally store IP addresses
+in its database or application logs; its logs record only that a request happened and
+its outcome — never link identifiers, meal contents, keys, or IP addresses. Cloudflare
+may process connection data to operate and protect its network under its own privacy
+policy.</p>
+<p>Sharing a meal as a file, which works without the internet, is still available and
+sends nothing to us.</p>
+
+<h3>More Apps</h3>
+<p>When you open <strong>Settings → More Apps</strong>, the app downloads the current
+list of Arosemena Apps apps and their icons from this website, which is hosted on
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Pages</a>.
+The request contains no identifier and nothing about you, and uses no cookies. GitHub
+receives your IP address, as it does for any visit to this site. Links to the App Store
+open in Apple's own App Store sheet.</p>
+
+<h3>Simple Track Plus and purchases</h3>
+<p>Simple Track Plus is an optional subscription sold by Apple. Apple handles payment,
+billing, renewal, refunds, and Family Sharing under
+<a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>; we never
+see your payment details or your Apple Account. To know whether Plus is active, the app
+reads Apple's signed purchase records on your iPhone, and the widgets check the same
+records themselves. Nothing about your subscription is sent to us, and Simple Track keeps
+no record of it of its own. Subscribing or not changes nothing about how your data is
+stored or shared.</p>
 
 <h3>Nothing else</h3>
 <p>There are no analytics, no advertising, no crash reporting that transmits your
-content, and no remote configuration. The app contains no third-party tracking code.</p>
+content, and no remote configuration. The app contains no third-party tracking or
+advertising code, and it does not track you across other companies' apps or websites.
+Links you tap yourself, such as the ones to this site, open in your browser.</p>
 
 <h2>Apple Health</h2>
 <p>Apple Health is entirely optional and off until you turn it on. Each part is asked
@@ -98,31 +204,30 @@ your nutrition.</p>
       changes your calorie target.</li>
 </ul>
 <p>Health data is used only for these features. It is never used for advertising,
-profiling, or sale, it is never included in a meal you share with someone, and Simple
-Track never sends it anywhere. What the app has brought in from Health — weights,
+profiling, or sale, it is never included in a meal you share — by file or by link — and
+Simple Track never sends it anywhere. What the app has brought in from Health — weights,
 body-fat readings, and daily totals — becomes part of your Simple Track history, so it is
-stored like the rest of that history and is included in an export only when you make
-one yourself. You can turn any of it off at any time in
-the Health app, and the rest of Simple Track keeps working.</p>
+stored like the rest of that history and is included in an export only when you make one
+yourself. You can turn any of it off at any time in the Health app, and the rest of
+Simple Track keeps working.</p>
 
 <h2>Photos and the camera</h2>
-<p>The camera is used to scan barcodes, to read nutrition labels, and to photograph
-meals. When you read a
+<p>The camera is used to scan barcodes and to read nutrition labels. When you read a
 label, the image is decoded, the text is recognised on your device, and the image is
-released. <strong>No photograph is saved by Simple Track and none is uploaded.</strong> Choosing
-a picture from your library uses the system picker, which hands the app only the one
-image you picked — Simple Track never asks for access to your photo library.</p>
+released. <strong>No photograph is saved by Simple Track and none is uploaded.</strong>
+Choosing a picture from your library uses the system picker, which hands the app only
+the one image you picked — Simple Track never asks for access to your photo library.</p>
 
 <h3>Photographing or describing a meal</h3>
-<p>On iPhones with Apple Intelligence, you can photograph a meal, describe it in a few
-words, or both, to get suggested foods. The photo and your words are read by Apple's
-on-device model, on your iPhone. Simple Track does not use Apple's Private Cloud Compute
-or any other online service for this, so neither leaves your iPhone. The photo is
-shrunk, its location and other metadata removed, read once, and released. It is never
-saved and never included in a meal you share. Nothing is logged until you check the
-suggestions and tap <strong>Log</strong>.</p>
+<p>Where this feature is offered on iPhones with Apple Intelligence, you can photograph a
+meal, describe it in a few words, or both, to get suggested foods. The photo and your
+words are read by Apple's on-device model, on your iPhone. Simple Track does not use
+Apple's Private Cloud Compute or any other online service for this, so neither leaves
+your iPhone. The photo is shrunk, its location and other metadata removed, read once,
+and released. It is never saved and never included in a meal you share. Nothing is
+logged until you check the suggestions and tap <strong>Log</strong>.</p>
 
-<h2>Backups and sharing</h2>
+<h2>Backups and sharing files</h2>
 
 <h3>Your own export</h3>
 <p>You can export your entire history to a file. It is encrypted with a password you
@@ -130,26 +235,36 @@ choose, using AES-256-GCM with a key derived by PBKDF2. The password is not stor
 the file. Where you put the file is up to you; the app does not send it anywhere.</p>
 <p>After an export, the app offers — once, and never by default — to save that password
 to your keychain. If you accept, it syncs through your Apple Account keychain so a
-replacement iPhone can still open the backup. That is the only thing Simple Track ever
-asks to sync, it holds a password and never your health data, and you can delete it in
-Settings. <strong>If you decline and later forget the password, there is no developer or
-server that can recover it.</strong></p>
+replacement iPhone can still open the backup. It holds a password and never your health
+data, and you can delete it in Settings. <strong>If you decline and later forget the
+password, there is no developer or server that can recover it.</strong></p>
 
 <h3>Ordinary device backups</h3>
-<p>Simple Track's data is included in your iPhone's normal backup, whether that is
+<p>Simple Track's diary is included in your iPhone's normal backup, whether that is
 iCloud or a computer, so a new phone restores your history along with everything else.
-Those backups are managed by Apple under Apple's terms, not by this app.</p>
+Those backups are managed by Apple under Apple's terms, not by this app. The list of
+meal links you have shared is not included.</p>
 
-<h3>Sharing a meal</h3>
-<p>You can send someone a single meal or recipe as a file. It contains that meal only:
-its foods, amounts, and nutrition. It never contains your profile, weight, targets,
-other logs, Health data, or your private corrections to foods.</p>
+<h3>Sharing a meal as a file</h3>
+<p>You can send someone a single meal or recipe as a file. It contains the same meal
+information as a link (above) and never your profile, weight, targets, other logs,
+Health data, or your private corrections to foods. A file goes only where you send it.</p>
 
 <h2>Deleting your data</h2>
-<p>Settings has a control that deletes every log, food, recipe, weight, and setting on
-the iPhone. Deleting the app removes its data too. Anything Simple Track wrote to Apple
-Health stays in Health until you remove it — there is a separate control that deletes
-only the entries this app wrote, and never data from other apps.</p>
+<p>Settings has a control that deletes every log, food, recipe, weight, target, and
+setting on the iPhone. Deleting the app removes all of its data from the iPhone,
+including the list of links you have shared. Anything Simple Track wrote to Apple Health
+stays in Health until you remove it — there is a separate control that deletes only the
+entries this app wrote, and never data from other apps.</p>
+<p><strong>Meal links you shared are not affected.</strong> Deleting your data, or the
+app, does not turn off links you already shared: each keeps working for the rest of its
+30 days unless you turn it off first in <strong>Settings → Shared Links</strong>.
+Deleting the app removes that list, so afterwards you can no longer turn those links off
+yourself; write to us with the link and we will remove it. Meals other people saved from
+your links stay in their libraries. The installation identifier for your copy of the app
+is deleted automatically after 90 days without a share. Because the service holds no
+account, name, or email address, we cannot look up records by those; a link itself is
+how to identify one.</p>
 
 <h2>Children</h2>
 <p>Simple Track is not directed at children and does not knowingly collect information
